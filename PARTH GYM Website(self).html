@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARTH Gym</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+</head>
+<link href="stylesheet" rel="css/style.css">
+
+<style>
+    /*CSS Reset*/
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: chartreuse;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(https://th.bing.com/th/id/Rea42c620c480bff297765334b5b457b2?rik=UTYLSHxfLnR7xQ&riu=http%3a%2f%2fwww.bodybuilding.com%2fimages%2f2016%2fjune%2fultimate-beginners-machine-workout-for-women-v2-2.jpg&ehk=GUfx37pRDRFbB3YEZs4L2nisjWNBbd80TOBUZExRP34%3d&risl=&pid=ImgRaw);
+    }
+
+    .left {
+        display: inline-block;
+        top: 20px;
+        left: 60px;
+        position: absolute;
+    }
+
+    .left img {
+        width: 60px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 50px auto;
+        /*border: 3px solid blue;*/
+    }
+
+    .right {
+        position: absolute;
+        right: 35px;
+        top: 40px;
+        display: inline-block;
+        /*border: 3px solid green;*/
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: chartreuse;
+        text-decoration: none;
+        padding: 30px 25px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: cyan;
+        text-decoration: underline;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        background-color: darkgrey;
+        margin: 0px 10px;
+        padding: 4px 5px;
+        border-radius: 10px;
+        border: darkorange 5px solid;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        color: orangered;
+    }
+
+    .container {
+        color: red;
+        margin: 100px 80px;
+        border:2px yellow solid;
+    }
+    .container button{
+        text-align: center;
+        width:100px;
+        margin:12px 25px;
+        display: block;
+    }
+
+    .form-group input {
+        text-align: left;
+        display: block;
+        width: 300px;
+        padding: 3px;
+        border: red solid 3px;
+        margin: 3px 20px;
+        font-size: larger;
+        border-radius:10px;
+    }
+    .container h3{
+        text-decoration: underline greenyellow;
+        margin-left: 25px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Parth Gym</div>
+
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a>
+
+                </li>
+                <li><a href="#">About Us</a>
+
+                </li>
+                <li><a href="#">Fitness Calculator</a>
+
+                </li>
+                <li><a href="#">Diet Chart</a>
+
+                </li>
+            </ul>
+        </div>
+        <!--right bar for buttons-->
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">FAQs</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best GYM of Purvanchal!</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Sex">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your City">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
